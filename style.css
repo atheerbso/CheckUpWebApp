@@ -52,6 +52,7 @@ header img {
     padding: 100px 500px;
     padding-bottom: 200px;
    
+   
 }
 
 .main h2{
@@ -69,6 +70,7 @@ header img {
     text-align: center;
     font-size: 1.1em;
     font-weight: 100;
+    font-family: 'Raleway', sans-serif;
     
 }
 section div a {
@@ -107,8 +109,10 @@ transition: 1.7s ease;
 /*======*/
 
 .item{
+    /* display: flex; */
     width: 100px;
     height: 500px;
+    
 }
 
 :root{
@@ -143,33 +147,23 @@ transition: 1.7s ease;
     background-attachment: fixed;
 }
 
-/* .item::before, .item::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 20px;
-    right: calc(var(--index) * -1);
-}
-
-.item::after{
-    left: calc(var(--index) * -1);
-}
-
-.items .item:hover{
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 10));} */
-
-
-/*======*/
 
 .calculaterContainer{
-/* display: flex; */
+
 justify-content: center;
 align-items: center;
-flex-direction: column;
-padding-top: 10px;
-}
 
+}
+.calculaterContainer h1 {
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 1.4rem;
+    padding: 50px;
+    padding-right: 150px;
+    color: #CBE4DE;
+    align-items: center;
+    text-align: center;
+}
 .input > input {
 width: 200px;
 height: 40px;
@@ -211,34 +205,28 @@ justify-content: center;
 text-align: center;
 align-items: center;
 font-family: 'Raleway', sans-serif;
-color: white;
+color: #CBE4DE;
+
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #637676;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+footer h3{
+font-size: 1.4rem;
+color: #CBE4DE;
+padding: 100px;
+font-family: 'Raleway', sans-serif;
+text-align: center;
+
+}
+footer img {
+    width: 200px;
+    height: 200px;
 }
 
-
-/*
-
-@media only screen and (max-width: 768px) {
-
-    
-    header {
-        padding: 5px;
-    }
-
-    header a {
-        font-size: 1.2em; 
-    }
-
-    header img {
-        width: 100px; 
-        height: 120px; 
-    }
-
-
-    .main {
-        padding: 10px; 
-    }
-
-    .main h2 {
-        font-size: 1.2em; }
-    }
-*/
