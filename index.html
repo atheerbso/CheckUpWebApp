@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header>
+            <img src="../WatherApi/logo.png" alt="CheckUp Logo">    
+        <div class = "nav-link">
+                <a href="#Home">Home</a>
+                <a href="#Calculater">Calculater</a>
+                <a href="About US">About US</a>
+        </div>
+    </header>
+      <section class="main">
+        <h2>Ever <span>Wondered</span> if this is the ideal spot to store your produce ?</h2>
+        <h3>Our website provide a solution ! lets to Check Up ideal place to save your product!</h3>
+        <!-- <div><a href="#Calculater" class="main-btn">Calculater</a></div>  -->
+         <div class="images">
+            <div class="wrapper">
+                <div class="items">
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7797851/pexels-photo-7797851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7852722/pexels-photo-7852722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7852675/pexels-photo-7852675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7796983/pexels-photo-7796983.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/3735655/pexels-photo-3735655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/4620818/pexels-photo-4620818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7796697/pexels-photo-7796697.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/8101525/pexels-photo-8101525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/8217476/pexels-photo-8217476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/8101529/pexels-photo-8101529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
+                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/6767768/pexels-photo-6767768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>      
+              </div>    
+           </div>    
+        </div>
+        <div class="calculaterContainer">
+            <div class="input">
+                <input type="text" class="inputValue" placeholder="Enter Location">
+                <input type="number" class="productTemp" placeholder="Enter your product temp">
+                <button class="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="displayWeather">
+                <h1 class="temp"></h1>
+                <p class="desc"></p>
+                <p class="productTemp" id="productTempDisplay"></p>
+            </div>
+        </div>
+    </section>
+      
+  
+    <!-- <div class="calculaterContainer">
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Enter Location">
+            <input type="number" class="productTemp" placeholder="Enter your product temp">
+            <button class="button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="displayWeather">
+            <h1 class="temp">----°C</h1>
+            <p class="desc">---</p>
+            <p class="productTemp" id="productTempDisplay"> ---</p>
+        </div>
+    </div> -->
+
+    <!-- Link to Javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
