@@ -1,83 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <script src="https://kit.fontawesome.com/91eada0414.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1bf8e8a4a6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1bf8e8a4a6.js" crossorigin="anonymous"></script>
 
-    <!-- CSS link -->
-    <link rel="stylesheet" href="style.css">
-
-
-    <!-- Font awsome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-
-
-    <!-- Google fonts link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-
-    <title>Weather App</title>
+    <title>Mazaya</title>
 </head>
+<body class="bg-white pt-10 pb-20">
+   <div class="header-container mx-auto px-5 space-x-5 flex flex-col md:flex-row justify-between">
+    <div class="search-container  bg-[#353B3A3B] h-12 rounded-full w-[31.25rem] border opacity-[60%]">
+       <div class=" content-btn m-auto px-3 py-2  flex  flex-row justify-between">
+        <button class="bg-white w-14 h-8 rounded-full  border  ">بحث</button>
+        <p class="pl-[45%] text-[#0b0c0cbd] text-base	px-[0.5px] ">ابحث عن العرض المطلوب</p>
+        <i class="fa-duotone fa-solid fa-magnifying-glass py-1"></i>      
+       </div>
+    </div><!--Search container-->
 
-<body class="main-box">
-    <header>
-            <img src="../WatherApi/logo.png" alt="CheckUp Logo">    
-        <div class = "nav-link">
-                <a href="#Home">Home</a>
-                <a href="#Calculater">Calculater</a>
-                <a href="About US">About US</a>
-        </div>
-    </header>
-      <section class="main">
-        <h2>Ever <span>Wondered</span> if this is the ideal spot to store your produce ?</h2>
-        <h3>Our website provide a solution ! lets to Check Up ideal place to save your product!</h3>
-        <!-- <div><a href="#Calculater" class="main-btn">Calculater</a></div>  -->
-         <div class="images">
-            <div class="wrapper">
-                <div class="items">
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7797851/pexels-photo-7797851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7852722/pexels-photo-7852722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7852675/pexels-photo-7852675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7796983/pexels-photo-7796983.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/3735655/pexels-photo-3735655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/4620818/pexels-photo-4620818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/7796697/pexels-photo-7796697.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/8101525/pexels-photo-8101525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/8217476/pexels-photo-8217476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/8101529/pexels-photo-8101529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>
-                  <div class="item" tabindex="0" style="background-image: url(https://images.pexels.com/photos/6767768/pexels-photo-6767768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"></div>      
-              </div>    
-           </div>    
-        </div>
-        <div class="calculaterContainer">
-            <h1>Enter your current place and your product tempruture .</h1>
-            
-            <div class="input">
-                <input type="text" class="inputValue" placeholder="Enter Location">
-                <input type="number" class="productTemp" placeholder="Enter your product temp">
-                <button class="button"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="displayWeather">
-                <h1 class="temp"></h1>
-                <p class="desc"></p>
-                <p class="productTemp" id="productTempDisplay"></p>
-            </div>
-        </div>
-    </section>
+    <div class="title">
+        <h1 class="font-bold size-8 text-right pl-[90%]">مزايا</h1>
+        <h3 class="font-normal text-[#212625BD] text-right pl-[20%]">كل ما تريد بخصومات وعروض مميزة لموظفي الوزارة</h3>
+    </div>
+   </div> <!--The end of section header -->
 
-    <footer>
-       
-     <img src="../CheckUpWebApp/logo.png">
-     <h3> Wep app to help you find ideal place<br> to save your product!</h3>
-    </footer>
+   <div class="hero pt-10" >
+<div class="main-bg  bg-[#0E463B] w-[97%] h-[80%]  mx-auto rounded-[20px] p-20 relative ">
+        <div class="hero-content ml-[80%] space-y-10   text-right flex-col ">
+                  <img class="img-bg bg-white p-7 rounded-[10px] relative left-28 " src="./saudiAirplane.png" >
+                  <h2 class="text-white text-base font-bold relative right-2 ">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+                  <button class="bg-white w-28 h-9 rounded-full relative right-1 ">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  التفاصيل
+                  </button>   
+        </div>
+        <div class="second-bg">
+           <img src="./Frame 1261153322.png" class="z-10 w-[100%] h-[100%]  absolute top-0 bottom-0  left-1 right-10">
+         </div>      
+</div> 
+</div><!--The end of hero section-->
+<div class="categories-cards flex">
+    <div class="py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories.png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">الأغذية والتسوق</h3>
+       </div>
+       <div class=" py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories (1).png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">التعليم والتدريب</h3>
+       </div>
+       <div class=" py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories (2).png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">القطاع المالي</h3>
+       </div>
+       <div class=" py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories (3).png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">السفر والسياحة</h3>
+       </div>
+       <div class=" py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories (4).png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">الصحة</h3>
+       </div>
 
-    <!-- Link to Javascript -->
-    <script src="main.js"></script>
+       <div class=" py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories (5).png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">السيارات</h3>
+       </div>
+
+       <div class=" py-5 bg-white w-48	h-24 rounded-lg m-4 border">
+        <img src="./Offer categories (6).png" class=" w-8 h-8  m-auto">
+        <h3 class=" text-black text-center p-1 text-base ">الكل</h3>
+       </div>
+</div>
+
+<div class="fillter-section flex  justify-between ">
+    <div class="left-side pl-5">
+        <i class="fa-solid fa-x absolute bg-white rounded-full border p-1 left-[10px]"></i>
+        <h3 class="px-5">مسح التصنيفات</h3>
+    </div>
+    <div class="right-side flex space-x-2 pr-5 p-2"> 
+        <select class=" border rounded-full  h-10 w-26 ">
+            <option value="">نوع العرض</option>
+            <option value="1">١</option>
+            <option value="2">٢</option>
+            <option value="3">٣</option>
+           </select>
+
+        <select class=" border rounded-full  h-10 w-26 p-2">
+        <option value="">المدينة</option>
+        <option value="r">الرياض</option>
+        <option value="d">الدمام</option>
+        <option value="j">جدة</option>
+       </select>
+     <h3 class="py-2">
+    : تصنيف
+     </h3> 
+    </div>
+</div>
+<div class="main-cards-section">
+    <div class="txt flex justify-between p-4 py-3">
+        <h3 class="font-light" >
+            <i class="fa-solid fa-arrow-left "></i>
+            عرض الكل
+        </h3>
+        <h3 class="font-bold">الصحة</h3>
+    </div>
+<div class="p-5 flex m-auto  space-x-5">
+    <div class="card w-[30rem] h-48 rounded-lg  border flex" >
+        <div class="content m-auto text-right ">
+            <h2 class="text-[#050505bd] text-[18px] font-bold pb-8">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+            <h4 class="text-[#212625BD] text-[14px] pb-1">خصم حتى 25% على رحلات الخطوط السعودية</h4>
+            <h4 class="text-[#212625BD] text-[14px] pb-1 ">حتى 2024/10/12</h4>
+        </div>
+        <div class="img w-20 h-20 m-auto">
+            <!-- <i class="fa-regular fa-arrow-right absolute left-0 bottom-[-9%]"></i> -->
+            <img src="./jrir (1).png">  
+            <i class="fa-solid fa-arrow-left absolute bg-white rounded-full border p-2 left-[1032px]"></i>
+        </div>
+    </div>
+    <div class="card  w-[30rem] h-48 rounded-lg  border flex" >
+        <div class="content m-auto text-right ">
+            <h2 class="text-[#050505bd] text-[18px] font-bold pb-8">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+            <h4 class="text-[#212625BD] text-[14px] pb-1">خصم حتى 25% على رحلات الخطوط السعودية</h4>
+            <h4 class="text-[#212625BD] text-[14px] pb-1 ">حتى 2024/10/12</h4>
+        </div>
+        <div class="img w-20 h-20 m-auto">
+            <!-- <i class="fa-regular fa-arrow-right absolute left-0 bottom-[-9%]"></i> -->
+            <img src="./image.png">  
+            <i class="fa-solid fa-arrow-left absolute bg-white rounded-full border p-2 left-[532px]"></i>
+        </div>
+        <h3 class="disc-box bg-red-600 w-16 h-6 font-semibold text-white text-[12px] p-1 rounded-tr-lg  rounded-bl-lg ">25 %
+            <i class="fa fa-tags"></i>
+        </h3>
+    </div>
+    <div class="card w-[30rem] h-48 rounded-lg  border flex" >
+        <div class="content m-auto text-right ">
+            <h2 class="text-[#050505bd] text-[18px] font-bold pb-8">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+            <h4 class="text-[#212625BD] text-[14px] pb-1">خصم حتى 25% على رحلات الخطوط السعودية</h4>
+            <h4 class="text-[#212625BD] text-[14px] pb-1 ">حتى 2024/10/12</h4>
+        </div>
+        <div class="img w-20 h-20 m-auto">
+            <!-- <i class="fa-regular fa-arrow-right absolute left-0 bottom-[-9%]"></i> -->
+            <img src="./saudiAirplane.png">  
+            <i class="fa-solid fa-arrow-left absolute bg-white rounded-full border p-2 left-10"></i>
+        </div>
+    </div>
+</div>
+<div class=" px-5  p-y5 flex   space-x-5">
+    <div class="card w-[30rem] h-48 rounded-lg  border flex" >
+        <div class="content m-auto text-right ">
+            <h2 class="text-[#050505bd] text-[18px] font-bold pb-8">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+            <h4 class="text-[#212625BD] text-[14px] pb-1">خصم حتى 25% على رحلات الخطوط السعودية</h4>
+            <h4 class="text-[#212625BD] text-[14px] pb-1 ">حتى 2024/10/12</h4>
+        </div>
+        <div class="img w-20 h-20 m-auto">
+            <!-- <i class="fa-regular fa-arrow-right absolute left-0 bottom-[-9%]"></i> -->
+            <img src="./image.png">  
+            <i class="fa-solid fa-arrow-left absolute bg-white rounded-full border p-2 left-[1032px]"></i>
+        </div>
+        <h3 class="disc-box bg-red-600 w-16 h-6 font-semibold text-white text-[12px] p-1 rounded-tr-lg  rounded-bl-lg ">25 %
+            <i class="fa fa-tags"></i>
+        </h3>
+    </div>
+    <div class="card  w-[30rem] h-48 rounded-lg  border flex" >
+        <div class="content m-auto text-right ">
+            <h2 class="text-[#050505bd] text-[18px] font-bold pb-8">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+            <h4 class="text-[#212625BD] text-[14px] pb-1">خصم حتى 25% على رحلات الخطوط السعودية</h4>
+            <h4 class="text-[#212625BD] text-[14px] pb-1 ">حتى 2024/10/12</h4>
+        </div>
+        <div class="img w-20 h-20 m-auto">
+            <!-- <i class="fa-regular fa-arrow-right absolute left-0 bottom-[-9%]"></i> -->
+            <img src="./sun&sands.png">  
+            <i class="fa-solid fa-arrow-left absolute bg-white rounded-full border p-2 left-[532px]"></i>
+        </div>
+    </div>
+    <div class="card w-[30rem] h-48 rounded-lg  border flex" >
+        <div class="content m-auto text-right ">
+            <h2 class="text-[#050505bd] text-[18px] font-bold pb-8">خصم حتى 25% على رحلات الخطوط السعودية</h2>
+            <h4 class="text-[#212625BD] text-[14px] pb-1">خصم حتى 25% على رحلات الخطوط السعودية</h4>
+            <h4 class="text-[#212625BD] text-[14px] pb-1 ">حتى 2024/10/12</h4>
+        </div>
+        <div class="img w-20 h-20 m-auto">
+            <!-- <i class="fa-regular fa-arrow-right absolute left-0 bottom-[-9%]"></i> -->
+            <img src="./jrir (1).png">  
+            <i class="fa-solid fa-arrow-left absolute bg-white rounded-full border p-2 left-10 "></i>
+        </div>
+        <h3 class="disc-box bg-red-600 w-16 h-6 font-semibold text-white text-[12px] p-1 rounded-tr-lg rounded-bl-lg " >25 %
+            <i class="fa fa-tags"></i>
+        </h3>
+    </div>
+</div>
+</div>
 </body>
-
 </html>
